@@ -25,5 +25,14 @@ namespace Contains_Duplicate_II
 
             Assert.IsTrue(action.ContainsNearbyDuplicate(nums, k));
         }
+
+        [TestMethod]
+        public void Test_nums_1_2_and_k_is_1_should_return_false()
+        {
+            var nums = new int[] { 1, 2 };
+            var k = 1;
+
+            Assert.IsFalse(action.ContainsNearbyDuplicate(nums, k));
+        }
     }
 }
