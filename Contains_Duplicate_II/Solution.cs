@@ -10,7 +10,7 @@ namespace Contains_Duplicate_II
     {
         public bool ContainsNearbyDuplicate(int[] nums, int k)
         {
-            throw new NotImplementedException();
+            return false;
         }
     }
 }
