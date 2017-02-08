@@ -5,16 +5,14 @@ namespace Contains_Duplicate_II
 {    
     [TestClass]
     public class ContainsDuplicate
-    {
-        Solution action = new Solution();
-
+    {        
         [TestMethod]
         public void Test_k_is_zero_should_return_false()
         {
             var nums = new int[] { 1, 1 };
             var k = 0;
 
-            Assert.IsFalse(action.ContainsNearbyDuplicate(nums, k));
+            Assert.IsFalse(Solution.ContainsNearbyDuplicate(nums, k));
         }
 
         [TestMethod]
@@ -23,7 +21,7 @@ namespace Contains_Duplicate_II
             var nums = new int[] { 1, 1 };
             var k = 1;
 
-            Assert.IsTrue(action.ContainsNearbyDuplicate(nums, k));
+            Assert.IsTrue(Solution.ContainsNearbyDuplicate(nums, k));
         }
 
         [TestMethod]
@@ -32,7 +30,7 @@ namespace Contains_Duplicate_II
             var nums = new int[] { 1, 2 };
             var k = 1;
 
-            Assert.IsFalse(action.ContainsNearbyDuplicate(nums, k));
+            Assert.IsFalse(Solution.ContainsNearbyDuplicate(nums, k));
         }
 
         [TestMethod]
@@ -41,7 +39,7 @@ namespace Contains_Duplicate_II
             var nums = new int[] { 1, 2, 1 };
             var k = 1;
 
-            Assert.IsFalse(action.ContainsNearbyDuplicate(nums, k));
+            Assert.IsFalse(Solution.ContainsNearbyDuplicate(nums, k));
         }
     }
 }
