@@ -10,7 +10,11 @@ namespace Contains_Duplicate_II
     {
         public bool ContainsNearbyDuplicate(int[] nums, int k)
         {
-            return false;
+            if (k == 0)
+            {
+                return false;
+            }
+            return true;
         }
     }
 }
