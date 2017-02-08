@@ -18,7 +18,7 @@ namespace Contains_Duplicate_II
             var map = new Dictionary<int, int>();
             for (int i = 0; i < nums.Length; i++)
             {
-                if (map.ContainsKey(nums[i]))
+                if (map.ContainsKey(nums[i]) && i - map[nums[i]] <= k)
                 {
                     return true;
                 }
