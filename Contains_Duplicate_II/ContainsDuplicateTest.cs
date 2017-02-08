@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Contains_Duplicate_II
 {    
     [TestClass]
-    public class ContainsDuplicate
+    public class ContainsDuplicateTest
     {        
         [TestMethod]
         public void Test_k_is_zero_should_return_false()
