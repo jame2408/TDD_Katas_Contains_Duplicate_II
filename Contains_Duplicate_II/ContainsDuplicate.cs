@@ -6,13 +6,13 @@ namespace Contains_Duplicate_II
     [TestClass]
     public class ContainsDuplicate
     {
+        Solution action = new Solution();
+
         [TestMethod]
         public void Test_k_is_zero_should_return_false()
         {
             var nums = new int[] { 1, 1 };
             var k = 0;
-
-            var action = new Solution();
 
             Assert.IsFalse(action.ContainsNearbyDuplicate(nums, k));
         }
@@ -22,8 +22,6 @@ namespace Contains_Duplicate_II
         {
             var nums = new int[] { 1, 1 };
             var k = 1;
-
-            var action = new Solution();
 
             Assert.IsTrue(action.ContainsNearbyDuplicate(nums, k));
         }
